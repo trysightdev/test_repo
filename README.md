@@ -39,3 +39,13 @@ git checkout filename.txt
 git reset --hard HEAD
 ```
 
+## Reset remote branch and local branch to previous commit
+```
+git push -f origin commit_id:branch_name
+git reset --hard commit_id
+```
+```
+git push -f origin 3c056fe9f71dd406c0b56bb54caa2b08c81c5a0c:develop
+git reset --hard 3c056fe9f71dd406c0b56bb54caa2b08c81c5a0c
+```
+
