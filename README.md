@@ -49,3 +49,19 @@ git push -f origin 3c056fe9f71dd406c0b56bb54caa2b08c81c5a0c:develop
 git reset --hard 3c056fe9f71dd406c0b56bb54caa2b08c81c5a0c
 ```
 
+## Overwrite `develop` Branch with `main`
+
+```bash
+# Step 1: Switch to the develop branch
+git checkout develop
+
+# Step 2: Pull the latest changes from the main branch
+git pull origin main
+
+# Step 3: Reset the develop branch to match the main branch
+git reset --hard origin/main
+
+# Step 4: Force push the changes to the remote repository
+git push origin develop --force
+
+echo "Develop branch has been overwritten with the content of the main branch."
