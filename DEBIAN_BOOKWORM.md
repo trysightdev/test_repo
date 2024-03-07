@@ -7,6 +7,12 @@ apt instal vim sudo
 exit
 sudo apt install lxde-core
 ```
+```
+git clone https://github.com/morrownr/88x2bu-20210702.git
+cd 88x2bu-20210702/
+make -j4
+sudo make install
+```
 
 ```
 sudo sed 'i/main /main contrib non-free /g' /etc/apt/sources.list
