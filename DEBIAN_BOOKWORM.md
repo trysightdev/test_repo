@@ -1,5 +1,12 @@
 # OS Setup 
 * [Nvidia](https://wiki.debian.org/NvidiaGraphicsDrivers)
+```
+su root
+pwd
+apt instal vim sudo
+exit
+sudo apt install lxde-core
+```
 
 ```
 sudo sed 'i/main /main contrib non-free /g' /etc/apt/sources.list
