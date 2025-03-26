@@ -65,7 +65,7 @@ git reset --hard origin/main
 git push origin develop --force
 
 echo "Develop branch has been overwritten with the content of the main branch."
-
+```
 # 1. Create a backup branch with the current state
 git checkout -b backup-main
 
