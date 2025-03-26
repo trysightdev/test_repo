@@ -65,3 +65,18 @@ git reset --hard origin/main
 git push origin develop --force
 
 echo "Develop branch has been overwritten with the content of the main branch."
+
+# 1. Create a backup branch with the current state
+git checkout -b backup-main
+
+# 2. Switch back to master
+git checkout master
+
+# 3. Revert all commits after 2b7ef015 but don't commit yet
+git revert --no-commit 2b7ef015..HEAD
+
+# 4. Commit the revert as a single commit
+git commit -m "Revert codebase to state of commit 2b7ef015 while preserving history"
+
+# 5. Push changes to origin
+git push origin master
