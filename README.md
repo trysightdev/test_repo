@@ -66,6 +66,8 @@ git push origin develop --force
 
 echo "Develop branch has been overwritten with the content of the main branch."
 ```
+## Save current main and revert to older commit while keeping history
+```
 # 1. Create a backup branch with the current state
 git checkout -b backup-main
 
@@ -80,3 +82,4 @@ git commit -m "Revert codebase to state of commit 2b7ef015 while preserving hist
 
 # 5. Push changes to origin
 git push origin master
+```
