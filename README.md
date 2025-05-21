@@ -1,4 +1,15 @@
 # test_repo
+### WSL2 Edit image without cloning
+```
+  sudo fdisk -l /mnt/d/tv-streamer-20250312.img
+  sudo kpartx -av /mnt/d/tv-streamer-20250312.img
+  sudo mount /dev/mapper/loop0p2 ~/imgmnt
+  sudo nano ~/imgmnt/etc/hostapd/hostapd.conf
+  sudo nano ~/imgmnt/etc/hostapd/hostapd.conf
+  sudo umount ~/imgmnt
+  sudo kpartx -dv /mnt/d/tv-streamer-20250312.img
+```
+
 ## Create tag and push to remote
 ```
 git tag 3.84
